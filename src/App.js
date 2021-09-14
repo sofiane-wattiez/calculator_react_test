@@ -40,11 +40,11 @@ function App() {
 	}
 
 	const calculate = () => {
-
-		if (calc === "") {
+		// || '+' || '-' || '*' || '/'
+		if (calc === '') {
 			return;
 		}
-		const value = calc;
+		const value = calc.slice(0);
 		setCalc(value);
 		setCalc(eval(calc).toString());
 
